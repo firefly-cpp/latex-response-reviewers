@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{jourcl}[2022/12/16 Cover letter for journal submissions]
+\ProvidesClass{jourrr}[2023/05/16 Response to reviewers template]
 
 % include dependencies
 \RequirePackage{graphicx}
