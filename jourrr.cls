@@ -155,10 +155,10 @@
 \newcommand{\referee}[0]{\underline{\large The authors’ reply to the Reviewer \therefereecounter:} \\ \newline
 \textbf{\Large Referee \therefereecounter:} \addtocounter{refereecounter}{1}\\\setcounter{commentcounter}{1}} 
 
-\newcommand{\response}[2]{%
+\newcommand{\response}[3]{%
 \hspace{-0.3cm}
   \begin{tabular}{p{14cm}  w{c}{3cm}} 
-    \textbf{Response:} {\color{blue} #2} & {\Huge \completed{#1}} \\ % Set font of checkbox here
+    \textbf{Response:} {\color{#2} #3} & {\Huge \completed{#1}} \\ % Set font of checkbox here
   \end{tabular} %
 }
 
