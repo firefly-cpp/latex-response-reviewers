@@ -10,25 +10,21 @@
 \RequirePackage{parskip}
 \RequirePackage[utf8]{inputenc}
 \RequirePackage[english]{babel}
-\RequirePackage{lipsum}
 \RequirePackage[iso,american]{isodate}
 \RequirePackage{fontawesome5}
 \RequirePackage{geometry}
-\RequirePackage{totcount}
+\RequirePackage{wasysym} 
+\RequirePackage{array}
 
 % no indent for whole document
 \setlength\parindent{0pt}
-
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
-
 %----------------------------------------------------------------------
 % process options
 \ProcessOptions\relax
 
 % styling of document
 %----------------------------------------------------------------------
-
-\RequirePackage{orcidlink}
 
 % set margins
  \newgeometry{ % Defaults for a4
@@ -140,10 +136,15 @@
 
 % Show Signature command
 \def \showSignature#1{
-\vspace{-2cm}\begin{flushright}\includegraphics[width=4cm,height=4cm,keepaspectratio]{#1}\end{flushright}
-}
+\vspace{-2cm}\begin{flushright}\includegraphics[width=4cm,height=4cm,keepaspectratio]{#1}\end{flushright}}
 
-% Page 2 - N 
+% Checkbox
+\newcommand{\checkbox}{\Square} % Checkbox symbol command
+\newcommand{\checkedbox}{\CheckedBox} % Checked checkbox symbol command
+
+\newcommand{\completed}[1]{\ifthenelse{\equal{#1}{true}}{\rlap{{\checkedbox}}} {\hspace{0.6cm}\checkbox}} % if true - checked; else - unchecked (square)
+
+% Page 2 - N commands
 
 \newcounter{refereecounter}
 \setcounter{refereecounter}{1}
@@ -153,7 +154,13 @@
 \newcommand{\referee}[0]{\underline{\large The authors’ reply to the Reviewer \therefereecounter:} \\ \newline
 \textbf{\Large Referee \therefereecounter:} \addtocounter{refereecounter}{1}\\\setcounter{commentcounter}{1}} 
 
-\newcommand{\response}[1]{\textbf{Response: } #1}
+\newcommand{\response}[2]{%
+\hspace{-0.3cm}
+  \begin{tabular}{p{14cm}  w{c}{3cm}} 
+    \textbf{Response:} #2 & {\Huge \completed{#1}} \\ % Set font of checkbox here
+  \end{tabular} %
+}
+
 
 \newcommand{\comment}[1]{\textbf{Comment \thecommentcounter:} #1 \addtocounter{commentcounter}{1}}
 
