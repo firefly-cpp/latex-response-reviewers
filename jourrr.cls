@@ -15,6 +15,7 @@
 \RequirePackage{geometry}
 \RequirePackage{wasysym} 
 \RequirePackage{array}
+\RequirePackage{xcolor}
 
 % no indent for whole document
 \setlength\parindent{0pt}
@@ -157,7 +158,7 @@
 \newcommand{\response}[2]{%
 \hspace{-0.3cm}
   \begin{tabular}{p{14cm}  w{c}{3cm}} 
-    \textbf{Response:} #2 & {\Huge \completed{#1}} \\ % Set font of checkbox here
+    \textbf{Response:} {\color{blue} #2} & {\Huge \completed{#1}} \\ % Set font of checkbox here
   \end{tabular} %
 }
 
