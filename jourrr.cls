@@ -97,6 +97,11 @@
 \def\Editor#1{\def\@Editor{#1}}
 \newcommand{\pEditor}{\@Editor}
 
+% name of the Associate Editor
+\def\AssociateEditor#1{\def\@AssociateEditor{#1}}
+\newcommand{\pAssociateEditor}{\@AssociateEditor}
+
+% name of the Special issue (optional)
 \def\SpecialIssue#1{\def\@SpecialIssue{#1}}
 \newcommand{\pSpecialIssue}{\@SpecialIssue}
 
@@ -166,4 +171,9 @@
 \newcommand{\comment}[1]{\textbf{Comment \thecommentcounter:} #1 \addtocounter{commentcounter}{1}}
 
 
+% macros for responding editor/associate editor
+\newcommand{\editorcomment}[1]{\textbf{Editor's Comment: } #1}
+\newcommand{\editorresponse}[0]{\underline{\large The authors’ reply to the Editor-in-Chief}}
 
+\newcommand{\associateeditorcomment}[1]{\textbf{Associate Editor's Comment: } #1}
+\newcommand{\associateeditorresponse}[0]{\underline{\large The authors’ reply to the Associate Editor}}
