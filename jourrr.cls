@@ -156,6 +156,10 @@
 \setcounter{refereecounter}{1}
 \newcounter{commentcounter}
 \setcounter{commentcounter}{0}
+\newcounter{eiccommentcounter}
+\setcounter{eiccommentcounter}{1}
+\newcounter{aecommentcounter}
+\setcounter{aecommentcounter}{1}
 
 \newcommand{\referee}[0]{\underline{\large The authors’ reply to the Reviewer \therefereecounter:} \\ \newline
 \textbf{\Large Referee \therefereecounter:} \addtocounter{refereecounter}{1}\\\setcounter{commentcounter}{1}} 
@@ -172,8 +176,8 @@
 
 
 % macros for responding editor/associate editor
-\newcommand{\editorcomment}[1]{\textbf{Editor's Comment: } #1}
+\newcommand{\editorcomment}[1]{\textbf{Editor's Comment \theeiccommentcounter: } #1\addtocounter{eiccommentcounter}{1}}
 \newcommand{\editorresponse}[0]{\underline{\large The authors’ reply to the Editor-in-Chief}}
 
-\newcommand{\associateeditorcomment}[1]{\textbf{Associate Editor's Comment: } #1}
+\newcommand{\associateeditorcomment}[1]{\textbf{Associate Editor's Comment \theaecommentcounter: } #1\addtocounter{aecommentcounter}{1}}
 \newcommand{\associateeditorresponse}[0]{\underline{\large The authors’ reply to the Associate Editor}}
