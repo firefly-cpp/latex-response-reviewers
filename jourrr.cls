@@ -16,6 +16,7 @@
 \RequirePackage{wasysym} 
 \RequirePackage{array}
 \RequirePackage{xcolor}
+\RequirePackage{bookmark}
 
 % no indent for whole document
 \setlength\parindent{0pt}
@@ -161,7 +162,7 @@
 \newcounter{aecommentcounter}
 \setcounter{aecommentcounter}{1}
 
-\newcommand{\referee}[0]{\underline{\large The authors’ reply to the Reviewer \therefereecounter:} \\ \newline
+\newcommand{\referee}[0]{\underline{\large The authors’ reply to the Reviewer \therefereecounter:} \phantomsection \addcontentsline{toc}{section}{Author's reply to reviewer \therefereecounter} \\ \newline
 \textbf{\Large Referee \therefereecounter:} \addtocounter{refereecounter}{1}\\\setcounter{commentcounter}{1}} 
 
 \newcommand{\response}[3]{%
@@ -177,7 +178,7 @@
 
 % macros for responding editor/associate editor
 \newcommand{\editorcomment}[1]{\textbf{Editor's Comment \theeiccommentcounter: } #1\addtocounter{eiccommentcounter}{1}}
-\newcommand{\editorresponse}[0]{\underline{\large The authors’ reply to the Editor-in-Chief}}
+\newcommand{\editorresponse}[0]{\underline{\large The authors’ reply to the Editor-in-Chief} \phantomsection \addcontentsline{toc}{section}{Editor in Chief}}
 
 \newcommand{\associateeditorcomment}[1]{\textbf{Associate Editor's Comment \theaecommentcounter: } #1\addtocounter{aecommentcounter}{1}}
-\newcommand{\associateeditorresponse}[0]{\underline{\large The authors’ reply to the Associate Editor}}
+\newcommand{\associateeditorresponse}[0]{\underline{\large The authors’ reply to the Associate Editor} \phantomsection \addcontentsline{toc}{section}{Associate Editor}}
