@@ -13,6 +13,7 @@ The repository hosts a template for writing responses to editors'/reviewers' com
 - Many macros included
 - Predefined different valedictions for different types of submissions (e.g., Yours sincerely, Yours faithfully, Best regards, etc.)
 - Custom greeting (e.g., "Dear Editor" or "Dear Editor-in-Chief" for regular submission, etc.)
+- Optional table of contents
 - Option to add custom Signature (i.e. an image of your hand-written signature)
 - ...
 
