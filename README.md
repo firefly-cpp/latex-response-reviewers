@@ -9,7 +9,7 @@ The repository hosts a template for writing responses to editors'/reviewers' com
 
 ### Main Features of this template:
 - Minimalistic design
-- Predefined commands for a journal name, author, editor, associate editor, date, etc.
+- Predefined commands for a journal name, submission ID, author, editor, associate editor, date, etc.
 - Many macros included
 - Predefined different valedictions for different types of submissions (e.g., Yours sincerely, Yours faithfully, Best regards, etc.)
 - Custom greeting (e.g., "Dear Editor" or "Dear Editor-in-Chief" for regular submission, etc.)
