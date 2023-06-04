@@ -8,14 +8,18 @@
 The repository hosts a template for writing responses to editors'/reviewers' comments for journal submissions written in LaTex that is minimalistic in one way while pre-defined with several commands that drastically speed up the process of preparing letters during the revision process.
 
 ### Main Features of this template:
+- With front page included
+- **Response ticks** to mark as completed
+- Custom response color 
 - Minimalistic design
+- Everything is customizable
 - Predefined commands for a journal name, submission ID, author, editor, associate editor, date, etc.
 - Many macros included
 - Predefined different valedictions for different types of submissions (e.g., Yours sincerely, Yours faithfully, Best regards, etc.)
 - Custom greeting (e.g., "Dear Editor" or "Dear Editor-in-Chief" for regular submission, etc.)
-- Optional table of contents
+- (Optional) Table of contents, jump to the reply you wish to address
 - Option to add custom Signature (i.e. an image of your hand-written signature)
-- ...
+
 
 ## Download/Install
 
