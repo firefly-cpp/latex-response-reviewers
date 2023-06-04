@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{jourrr}[2023/05/16 Response to reviewers template]
+\ProvidesClass{jourrr}[2023/06/04 Response to reviewers template]
 
 % load class
 \LoadClass[11pt,a4paper]{article} % Font size and paper type
