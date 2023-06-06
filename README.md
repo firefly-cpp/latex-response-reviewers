@@ -23,6 +23,7 @@ The repository hosts a template for writing responses to editors'/reviewers' com
 
 ## Download/Install
 
+Please install the `jourrr` package through the package manager of your TeX distribution or download it directly from: [CTAN](https://www.ctan.org/pkg/jourrr).
 
 ## Related templates
 
