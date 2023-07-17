@@ -163,7 +163,9 @@
 \setcounter{aecommentcounter}{1}
 
 \newcommand{\referee}[0]{\underline{\large The authors’ reply to the Reviewer \therefereecounter:} \phantomsection \addcontentsline{toc}{section}{Author's reply to reviewer \therefereecounter} \\ \newline
-\textbf{\Large Referee \therefereecounter:} \addtocounter{refereecounter}{1}\\\setcounter{commentcounter}{1}} 
+\textbf{\Large Reviewer \therefereecounter:} \addtocounter{refereecounter}{1}\\\setcounter{commentcounter}{1}} 
+
+\newcommand{\missingreferee}[0]{\addtocounter{refereecounter}{1}}
 
 \newcommand{\response}[3]{%
 \hspace{-0.3cm}
