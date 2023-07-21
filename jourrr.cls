@@ -180,7 +180,7 @@
 
 % macros for responding editor/associate editor
 \newcommand{\editorcomment}[1]{\textbf{Editor's Comment \theeiccommentcounter: } #1\addtocounter{eiccommentcounter}{1}}
-\newcommand{\editorresponse}[0]{\underline{\large The authors’ reply to the Editor-in-Chief} \phantomsection \addcontentsline{toc}{section}{Editor in Chief}}
+\newcommand{\editorresponse}[0]{\underline{\large The authors’ reply to the Editor-in-Chief} \phantomsection \addcontentsline{toc}{section}{Editor-in-Chief}}
 
 \newcommand{\associateeditorcomment}[1]{\textbf{Associate Editor's Comment \theaecommentcounter: } #1\addtocounter{aecommentcounter}{1}}
 \newcommand{\associateeditorresponse}[0]{\underline{\large The authors’ reply to the Associate Editor} \phantomsection \addcontentsline{toc}{section}{Associate Editor}}
