@@ -1,5 +1,7 @@
 # A LaTeX template for a journal rebuttal letter (response to editors/reviewers)
 [![CTAN](https://img.shields.io/ctan/v/jourrr.svg)](https://ctan.org/pkg/jourrr)
+![GitHub repo size](https://img.shields.io/github/repo-size/firefly-cpp/latex-response-reviewers?style=flat-square)
+[![GitHub license](https://img.shields.io/github/license/firefly-cpp/latex-response-reviewers.svg)](https://github.com/firefly-cpp/latex-response-reviewers/blob/master/LICENSE)
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 
 ## About
