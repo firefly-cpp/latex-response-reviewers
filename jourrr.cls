@@ -167,13 +167,35 @@
 
 \newcommand{\missingreferee}[0]{\addtocounter{refereecounter}{1}}
 
-\newcommand{\response}[3]{%
-\hspace{-0.3cm}
-  \begin{tabular}{p{14cm}  w{c}{3cm}} 
-    \textbf{Response:} {\color{#2} #3} & {\Huge \completed{#1}} \\ % Set font of checkbox here
-  \end{tabular} %
-}
+%\newcommand{\response}[3]{%
+%\hspace{-0.3cm}
+%  \begin{tabular}{p{14cm}  w{c}{3cm}} 
+%    \textbf{Response:} {\color{#2} #3} & {\Huge \completed{#1}} \\ % Set font of checkbox here
+%  \end{tabular} %
+%}
 
+%\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+%
+%\newcommand{\response}[3]{%
+%  \noindent
+%  \begin{minipage}{18cm}
+%    \begin{tabular}{p{16cm} P{3cm}}
+%      \textbf{Response:} \begin{minipage}[t]{14cm}\color{#2}#3\end{minipage} & {\Huge \completed{#1}} \\
+%    \end{tabular}
+%  \end{minipage}
+%}
+
+\newcommand{\response}[3]{%
+  \noindent
+  \begin{minipage}[t]{0.955\linewidth}
+    \textbf{Response:} \color{#2}#3
+  \end{minipage}%
+  \hfill
+  \begin{minipage}[t]{0.15\linewidth}
+    {\Huge \completed{#1}}
+  \end{minipage}
+  \vspace{1em}  % adding some space after the command for separation
+}
 
 \newcommand{\comment}[1]{\textbf{Comment \thecommentcounter:} #1 \addtocounter{commentcounter}{1}}
 
