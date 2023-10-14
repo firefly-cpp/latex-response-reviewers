@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{jourrr}[2023/06/04 A LaTeX template for a journal rebuttal letter]
+\ProvidesClass{jourrr}[2023/10/14 A LaTeX template for a journal rebuttal letter]
 
 % load class
 \LoadClass[11pt,a4paper]{article} % Font size and paper type
