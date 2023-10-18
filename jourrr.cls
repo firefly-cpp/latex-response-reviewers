@@ -5,6 +5,7 @@
 \LoadClass[11pt,a4paper]{article} % Font size and paper type
 
 % include dependencies
+\RequirePackage{amsmath}
 \RequirePackage{graphicx}
 \RequirePackage{fancyhdr}
 \RequirePackage{parskip}
