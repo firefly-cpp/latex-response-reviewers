@@ -1,5 +1,6 @@
 \documentclass{jourrr}
 
+\usepackage{caption}
 % Path to your signature (if you have one). 
 \signaturePath{imgs/jourrr-signature.png}
 %---------------------------------------------------------------------%
@@ -153,7 +154,11 @@ General comment of reviewer to the author.
 
 \comment{This is the comment}
 
-\response{false}{blue}{Authors thanks the Reviewer 1 for his/her positive mention about our work. Authors thanks the Reviewer 1 for his/her positive mention about our work. Authors thanks the Reviewer 1 for his/her positive mention about our work.}
+\response{false}{blue}{Authors thanks the Reviewer 1 for his/her positive mention about our work. 
+\centering % example of including a figure
+\includegraphics[width=2.0in]{imgs/niapy.png}
+\captionof{figure}{Caption for image}
+}
 
 \comment{This is the comment}
 
