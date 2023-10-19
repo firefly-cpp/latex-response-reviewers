@@ -1,3 +1,6 @@
+% Author: Rok Kukovec and Iztok Fister Jr.
+% CC-BY-SA-4.0 license 
+
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{jourrr}[2023/10/14 A LaTeX template for a journal rebuttal letter]
 
