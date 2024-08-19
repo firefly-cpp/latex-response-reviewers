@@ -22,14 +22,14 @@
 \RequirePackage{xcolor}
 \RequirePackage{bookmark}
 
-% no indent for whole document
+% no indent for the whole document
 \setlength\parindent{0pt}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{article}}
 %----------------------------------------------------------------------
 % process options
 \ProcessOptions\relax
 
-% styling of document
+% styling of the document
 %----------------------------------------------------------------------
 
 % set margins
@@ -48,14 +48,14 @@
 
 \setlength{\headheight}{42.0pt}
 
-% set a little indendation for paragraphs
+% Set a little indentation for paragraphs
 \setlength{\parindent}{0pt}
 
 % space between paragraphs
 \setlength{\parskip}{1em}
 
 %----------------------------------------------------------------------
-% new command for the information of author
+% new command for the information of the author
 \newcommand{\responseheader}[1]{
 %\noindent
 \fancyfoot{}
@@ -119,7 +119,7 @@
 \def\PersonAddressing#1{\def\@PersonAddressing{#1}}
 \newcommand{\pPersonAddressing}{\@PersonAddressing}
 
-% We thank editor
+% We thank the editor
 \def\Introduction#1{\def\@Introduction{#1}}
 \newcommand{\pIntroduction}{\@Introduction}
 
