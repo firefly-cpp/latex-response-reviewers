@@ -45,7 +45,7 @@ Please install the `jourrr` package through the package manager of your TeX dist
 ## 🔗 Related templates
 [A cover letter template for a journal paper submission in LaTex](https://github.com/firefly-cpp/cover-letter-latex)
 
-# Disclaimer
+## Disclaimer
 This software is provided as-is, and there are no guarantees that it fits your purposes or that it is bug-free. Use it at your own risk!
 
 ## 🔑 License
