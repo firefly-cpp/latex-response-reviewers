@@ -21,6 +21,7 @@
 \RequirePackage{array}
 \RequirePackage{xcolor}
 \RequirePackage{bookmark}
+\RequirePackage[hypcap=false]{caption}
 
 % no indent for the whole document
 \setlength\parindent{0pt}
@@ -153,7 +154,23 @@
 \newcommand{\checkbox}{\Square} % Checkbox symbol command
 \newcommand{\checkedbox}{\CheckedBox} % Checked checkbox symbol command
 
-\newcommand{\completed}[1]{\ifthenelse{\equal{#1}{true}}{\rlap{{\checkedbox}}} {\hspace{0.6cm}\checkbox}} % if true - checked; else - unchecked (square)
+\newcommand{\completed}[1]{%
+  \ifthenelse{\equal{#1}{true}}{%
+    \rlap{\checkedbox}%
+  }{%
+    \ifthenelse{\equal{#1}{false}}{%
+      \hspace{0.6cm}\checkbox%
+    }{%
+    \ifthenelse{\equal{#1}{none}}{%
+      \phantom{\hspace{0.6cm}\checkbox}%
+      }%
+      {
+      % On unknown input, render empty checkbox - prevent errors
+      \phantom{\hspace{0.6cm}\checkbox}%
+      }%
+    }%
+  }%
+}
 
 % Page 2 - N commands
 
